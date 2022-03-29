@@ -1,0 +1,471 @@
+> use SampleDB
+switched to db SampleDB
+> show database
+uncaught exception: Error: don't know how to show [database] :
+shellHelper.show@src/mongo/shell/utils.js:1191:11
+shellHelper@src/mongo/shell/utils.js:819:15
+@(shellhelp2):1:1
+> show databases
+CMS                      0.000GB
+CanteenManagementSystem  0.000GB
+aditya                   0.000GB
+admin                    0.000GB
+ak                       0.000GB
+akp                      0.000GB
+booksdb                  0.000GB
+bookshop                 0.000GB
+config                   0.000GB
+courses987               0.000GB
+database_surii           0.000GB
+demodb                   0.000GB
+emp                      0.000GB
+emp1                     0.000GB
+employee                 0.000GB
+finale                   0.000GB
+firstdb                  0.000GB
+hexadb                   0.000GB
+hexanew                  0.000GB
+invoice                  0.000GB
+local                    0.000GB
+mango                    0.000GB
+mongo_practice           0.000GB
+mongo_practice_Sagnik    0.000GB
+mongodb_hexaware         0.000GB
+mongodb_training         0.000GB
+movies                   0.000GB
+my61961                  0.000GB
+mydb                     0.000GB
+mymong_63875             0.000GB
+mymongo_63833            0.000GB
+mymongo_63837            0.000GB
+mymongo_63857            0.000GB
+mymongo_63860            0.000GB
+mymongo_63866            0.000GB
+mymongo_63867            0.000GB
+mymongo_63875            0.000GB
+mymongo_63882            0.000GB
+mymongo_63895            0.000GB
+mymongo_63902            0.000GB
+mymongo_63903            0.000GB
+pallavi                  0.000GB
+petshop                  0.000GB
+petshop(db)              0.000GB
+petshopdb                0.000GB
+practice                 0.000GB
+productdb                0.000GB
+sagnikdb                 0.000GB
+sakila                   0.000GB
+sample                   0.000GB
+sample1                  0.000GB
+sanketdb                 0.000GB
+sushdb                   0.000GB
+usermanaged              0.000GB
+> use SampleDB
+switched to db SampleDB
+> db.dropdatabase
+SampleDB.dropdatabase
+> db.emp1.insert({name:"kent"})
+WriteResult({ "nInserted" : 1 })
+> db.dropdtabase
+SampleDB.dropdtabase
+> use hdDB
+switched to db hdDB
+> show dbs
+CMS                      0.000GB
+CanteenManagementSystem  0.000GB
+SampleDB                 0.000GB
+aditya                   0.000GB
+admin                    0.000GB
+ak                       0.000GB
+akp                      0.000GB
+booksdb                  0.000GB
+bookshop                 0.000GB
+config                   0.000GB
+courses987               0.000GB
+database_surii           0.000GB
+demodb                   0.000GB
+emp                      0.000GB
+emp1                     0.000GB
+employee                 0.000GB
+finale                   0.000GB
+firstdb                  0.000GB
+hexadb                   0.000GB
+hexanew                  0.000GB
+invoice                  0.000GB
+local                    0.000GB
+mango                    0.000GB
+mongo_practice           0.000GB
+mongo_practice_Sagnik    0.000GB
+mongodb_hexaware         0.000GB
+mongodb_training         0.000GB
+movies                   0.000GB
+my61961                  0.000GB
+mydb                     0.000GB
+mymong_63875             0.000GB
+mymongo_63833            0.000GB
+mymongo_63837            0.000GB
+mymongo_63857            0.000GB
+mymongo_63860            0.000GB
+mymongo_63866            0.000GB
+mymongo_63867            0.000GB
+mymongo_63875            0.000GB
+mymongo_63882            0.000GB
+mymongo_63895            0.000GB
+mymongo_63902            0.000GB
+mymongo_63903            0.000GB
+pallavi                  0.000GB
+petshop                  0.000GB
+petshop(db)              0.000GB
+petshopdb                0.000GB
+practice                 0.000GB
+productdb                0.000GB
+sagnikdb                 0.000GB
+sakila                   0.000GB
+sample                   0.000GB
+sample1                  0.000GB
+sanketdb                 0.000GB
+sushdb                   0.000GB
+usermanaged              0.000GB
+> use hdDB
+switched to db hdDB
+> db.createCollection("employee")
+{ "ok" : 1 }
+> show collections
+employee
+> db.employee.insert({"empname":"emma"})
+WriteResult({ "nInserted" : 1 })
+> show dbs
+CMS                      0.000GB
+CanteenManagementSystem  0.000GB
+SampleDB                 0.000GB
+aditya                   0.000GB
+admin                    0.000GB
+ak                       0.000GB
+akp                      0.000GB
+booksdb                  0.000GB
+bookshop                 0.000GB
+config                   0.000GB
+courses987               0.000GB
+database_surii           0.000GB
+demodb                   0.000GB
+emp                      0.000GB
+emp1                     0.000GB
+employee                 0.000GB
+finale                   0.000GB
+firstdb                  0.000GB
+hdDB                     0.000GB
+hexadb                   0.000GB
+hexanew                  0.000GB
+invoice                  0.000GB
+local                    0.000GB
+mango                    0.000GB
+mongo_practice           0.000GB
+mongo_practice_Sagnik    0.000GB
+mongodb_hexaware         0.000GB
+mongodb_training         0.000GB
+movies                   0.000GB
+my61961                  0.000GB
+my70578                  0.000GB
+mydb                     0.000GB
+mymong_63875             0.000GB
+mymongo_63833            0.000GB
+mymongo_63837            0.000GB
+mymongo_63857            0.000GB
+mymongo_63860            0.000GB
+mymongo_63866            0.000GB
+mymongo_63867            0.000GB
+mymongo_63875            0.000GB
+mymongo_63882            0.000GB
+mymongo_63895            0.000GB
+mymongo_63902            0.000GB
+mymongo_63903            0.000GB
+pallavi                  0.000GB
+petshop                  0.000GB
+petshop(db)              0.000GB
+petshopdb                0.000GB
+practice                 0.000GB
+productdb                0.000GB
+sagnikdb                 0.000GB
+sakila                   0.000GB
+sample                   0.000GB
+sample1                  0.000GB
+sanketdb                 0.000GB
+sushdb                   0.000GB
+usermanaged              0.000GB
+> db.department.insert({"deptname":"operations")
+... db.department.insert({"deptname":"operations"})
+... )
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:45
+> db.department.insert({"deptname":"operations"})
+WriteResult({ "nInserted" : 1 })
+> show collections
+department
+employee
+> db.employee.finds()
+uncaught exception: TypeError: db.employee.finds is not a function :
+@(shell):1:1
+> db.employee.find()
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+> db.department.find()
+{ "_id" : ObjectId("62429639f13ac9c821ff742a"), "deptname" : "operations" }
+> db.department.drop()
+true
+> show collections
+employee
+> db.employee.insert(
+... {
+...    name:"Charru",
+...    details:{
+...      age:"19 years",
+...      standard: "BE first year"
+... },
+... Batch: [{size:"Small",qty:15},{size:"Medium",qty:251}],
+... category:"Computer Science"
+... }
+... )
+WriteResult({ "nInserted" : 1 })
+> db.employee.insertMany(
+... [
+...    {
+...       FirstName: "Radhika",
+...
+Display all 190 possibilities? (y or n)
+...       Last_name: "Sharma",
+...       Date_Of_Birth: "1995-09-26",
+...       e_mail: "radhika_sharma123@gmail.com",
+...       phone: "9008345134"
+...    },
+...    {
+...       First_Name:"Rachel",
+...       Last_name:"Christmas",
+...       Date_Of_Birth:"1990-02-16",
+...       e_mail:"Rachel_Christmas@gmail.com",
+...       phone: "9000348234"
+...    },
+... ]
+... )
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62429d25f13ac9c821ff742c"),
+                ObjectId("62429d25f13ac9c821ff742d")
+        ]
+}
+> db.employee.find()
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.find().pretty()
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{
+        "_id" : ObjectId("62429a92f13ac9c821ff742b"),
+        "name" : "Charru",
+        "details" : {
+                "age" : "19 years",
+                "standard" : "BE first year"
+        },
+        "Batch" : [
+                {
+                        "size" : "Small",
+                        "qty" : 15
+                },
+                {
+                        "size" : "Medium",
+                        "qty" : 251
+                }
+        ],
+        "category" : "Computer Science"
+}
+{
+        "_id" : ObjectId("62429d25f13ac9c821ff742c"),
+        "FirstName" : "Radhika",
+        "Last_name" : "Sharma",
+        "Date_Of_Birth" : "1995-09-26",
+        "e_mail" : "radhika_sharma123@gmail.com",
+        "phone" : "9008345134"
+}
+{
+        "_id" : ObjectId("62429d25f13ac9c821ff742d"),
+        "First_Name" : "Rachel",
+        "Last_name" : "Christmas",
+        "Date_Of_Birth" : "1990-02-16",
+        "e_mail" : "Rachel_Christmas@gmail.com",
+        "phone" : "9000348234"
+}
+> db.employee.find({},{"name":1,"age":1,_id:0})
+{  }
+{ "name" : "Charru" }
+{  }
+{  }
+> db.employee.find({},{"name":1,"age":1,_id:1})
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429") }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c") }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d") }
+> db.employee.find({},{"First_Name":1,"Last_name":1,_id:0})
+{  }
+{  }
+{ "Last_name" : "Sharma" }
+{ "First_Name" : "Rachel", "Last_name" : "Christmas" }
+> db.employee.find().limit(2)
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+> db.employee.find().limit(3)
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+> db.employee.find().limit(4)
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.find().limit(3).skip(1)
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.find().limit(3).skip(2)
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.find().limit(3).skip(3)
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.find().skip(3)
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.find().skip(1)
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.find().limit(3)
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+> db.employee.findOne({"First_Name":"Radhika"})
+null
+> db.employee.findOne({"FirstName":"Radhika"})
+{
+        "_id" : ObjectId("62429d25f13ac9c821ff742c"),
+        "FirstName" : "Radhika",
+        "Last_name" : "Sharma",
+        "Date_Of_Birth" : "1995-09-26",
+        "e_mail" : "radhika_sharma123@gmail.com",
+        "phone" : "9008345134"
+}
+ db.employee.find({"id":{$lt:200}})
+> db.employee.find({"age":{$lte:200}})
+> db.employee.find({"age":{$gte:200}})
+> db.employee.find({"age":{$ne:200}})
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.find({"FirstName":{$in:["sam","Radhika","Rachel"]}})
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+> db.employee.find({"age":{$not:{$ngt:25}}})
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown operator: $ngt",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.employee.find({"age":{$not:{$lte:25}}})
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> show collections
+employee
+> db.employee.update("age":"45 years")
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:24
+> db.employee.update(age:"45 years")
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:22
+> db.employee.update(Last_Name:"joginder")
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:28
+> db.employee.update({Last_Name:"joginder"})
+uncaught exception: Error: need an update object or pipeline :
+DBCollection.prototype._parseUpdate@src/mongo/shell/collection.js:451:15
+DBCollection.prototype.update@src/mongo/shell/collection.js:497:18
+@(shell):1:1
+> db.employee.update({age:"45 years"})
+uncaught exception: Error: need an update object or pipeline :
+DBCollection.prototype._parseUpdate@src/mongo/shell/collection.js:451:15
+DBCollection.prototype.update@src/mongo/shell/collection.js:497:18
+@(shell):1:1
+> db.employee.update({age:"19 years"},{$set:{age:"25 years}})
+uncaught exception: SyntaxError: "" literal not terminated before end of script :
+@(shell):1:59
+> db.employee.update({age:"19 years",{$set:{age:"25 years}})
+uncaught exception: SyntaxError: expected property name, got '{' :
+@(shell):1:35
+> db.employee.update({'name':'uma'},{$set:{'age':'62'})
+... db.employee.update({'name':'uma'},{$set:{'age':'65'}})
+... )
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:52
+> db.employee.update({'name':'uma'},{$set:{'age':'62'}})
+WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+> db.employee.find()
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.update({'name':'Charru'},{$set:{'age':'62'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.employee.find()
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science", "age" : "62" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+> db.employee.update({'name':'Charru'},{$set:{'age':'62 years'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.employee.find()
+{ "_id" : ObjectId("624294fcf13ac9c821ff7429"), "empname" : "emma" }
+{ "_id" : ObjectId("62429a92f13ac9c821ff742b"), "name" : "Charru", "details" : { "age" : "19 years", "standard" : "BE first year" }, "Batch" : [ { "size" : "Small", "qty" : 15 }, { "size" : "Medium", "qty" : 251 } ], "category" : "Computer Science", "age" : "62 years" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742c"), "FirstName" : "Radhika", "Last_name" : "Sharma", "Date_Of_Birth" : "1995-09-26", "e_mail" : "radhika_sharma123@gmail.com", "phone" : "9008345134" }
+{ "_id" : ObjectId("62429d25f13ac9c821ff742d"), "First_Name" : "Rachel", "Last_name" : "Christmas", "Date_Of_Birth" : "1990-02-16", "e_mail" : "Rachel_Christmas@gmail.com", "phone" : "9000348234" }
+>
+> use sample
+switched to db sample
+> db.createdatabase("employee")
+uncaught exception: TypeError: db.createdatabase is not a function :
+@(shell):1:1
+> db.createcollection("employee")
+uncaught exception: TypeError: db.createcollection is not a function :
+@(shell):1:1
+> db.createCollection("employee")
+{ "ok" : 1 }
+> show collections
+emp
+employee
+mycollection
+mydate
+sample
+student
+> db.employee.save(
+... {
+... name : "Harish",
+...   details:{
+...      age:"18 years",
+...      standard:"BE First year",
+...      },
+...      Batch:[{size:"small",qty:15},
+... {size:"Medium",qty:25}],
+...    category:"Computer Science"
+...   }
+... )
+WriteResult({ "nInserted" : 1 })
+> db.employee.find()
+{ "_id" : ObjectId("6242c5a40520b3780020899b"), "name" : "Harish", "details" : { "age" : "18 years", "standard" : "BE First year" }, "Batch" : [ { "size" : "small", "qty" : 15 }, { "size" : "Medium", "qty" : 25 } ], "category" : "Computer Science" }
+> db.employee.save({_id:ObjectId("6242c5a40520b3780020899b")}, { name : "Harish",   details:{      age:"26 years",      standard:"BE First year",      },      Batch:[{size:"small",qty:15}, {size:"Medium",qty:25}],    category:"Computer Science"   } )
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.employee.find()
+{ "_id" : ObjectId("6242c5a40520b3780020899b") }
+> db.employee.find()
+{ "_id" : ObjectId("6242c5a40520b3780020899b") }
+> db.employee.remove({})
+WriteResult({ "nRemoved" : 1 })
+> db.employee.find()
+>
